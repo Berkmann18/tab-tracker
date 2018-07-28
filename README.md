@@ -4,10 +4,14 @@
 [![Inline docs](http://inch-ci.org/github/Berkmann18/tab-tracker.svg?branch=master)](http://inch-ci.org/github/Berkmann18/tab-tracker)
 [![NSP Status](https://nodesecurity.io/orgs/berkmann18/projects/a79c537b-fef5-49bf-bb4d-6953a1234fb3/badge)](https://nodesecurity.io/orgs/berkmann18/projects/a79c537b-fef5-49bf-bb4d-6953a1234fb3)
 [![dependencies Status](https://david-dm.org/Berkmann18/tab-tracker/status.svg)](https://david-dm.org/Berkmann18/tab-tracker)
+ [![devDependencies Status](https://david-dm.org/Berkmann18/tab-tracker/dev-status.svg)](https://david-dm.org/Berkmann18/tab-tracker?type=dev)
 <!-- dependabot badge -->
-<!-- TravisCI/build badge -->
-<!-- BetterCodeHub/quality badge -->
-<!-- Codecov + jest badge -->
+
+[![Build Status](https://travis-ci.org/Berkmann18/tab-tracker.png?branch=master)](https://travis-ci.org/Berkmann18/tab-tracker)
+[![BCH compliance](https://bettercodehub.com/edge/badge/Berkmann18/tab-tracker?branch=master)](https://bettercodehub.com/)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/Berkmann18/tab-tracker.svg?maxAge=2592000)](https://codecov.io/github/Berkmann18/tab-tracker?branch=master)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+
 <!-- SauceLab badge -->
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
@@ -18,26 +22,34 @@ A guitar tab tracking web app using a VEN stack.
 
 # Production stack
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-<style scoped>
+<!--<style scoped>
 .ico {
   font-size: 2rem
 }
-</style>
+</style>-->
 <table style="text-align: center">
 	<tr>
 		<td>Front-End</td>
 		<td>
-        	<i class="devicon-vuejs-plain colored ico" title="VueJS"></i>
-            <i class="devicon-sass-original colored ico" title="SCSS"></i>
+        	<!--<i class="devicon-vuejs-plain colored ico" title="VueJS"></i>
+            <i class="devicon-sass-original colored ico" title="SCSS"></i>-->
+            <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/vuejs.svg" alt="VueJS" title="VueJS">
+            <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/sass.svg" alt="SCSS" title="SCSS">
         </td>
 	</tr>
 	<tr>
 		<td>Routing</td>
-		<td><i class="devicon-express-original colored ico" title="Express"></i></td>
+		<td>
+		    <!--<i class="devicon-express-original colored ico" title="Express"></i>-->
+		    <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/express.svg" alt="Express" title="Express">
+		</td>
 	</tr>
 	<tr>
 		<td>Server</td>
-		<td><i class="devicon-nodejs-plain colored ico" title="NodeJS"></i></td>
+		<td>
+		    <!--<i class="devicon-nodejs-plain colored ico" title="NodeJS"></i>-->
+		    <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/nodejs.svg" alt="NodeJS" title="NodeJS">
+		</td>
 	</tr>
 </table>
 
