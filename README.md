@@ -10,7 +10,7 @@
 [![Build Status](https://travis-ci.org/Berkmann18/tab-tracker.png?branch=master)](https://travis-ci.org/Berkmann18/tab-tracker)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Berkmann18/tab-tracker?branch=master)](https://bettercodehub.com/)
 [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/Berkmann18/tab-tracker.svg?maxAge=2592000)](https://codecov.io/github/Berkmann18/tab-tracker?branch=master)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 <!-- SauceLab badge -->
 
@@ -31,8 +31,6 @@ A guitar tab tracking web app using a VEN stack.
 	<tr>
 		<td>Front-End</td>
 		<td>
-        	<!--<i class="devicon-vuejs-plain colored ico" title="VueJS"></i>
-            <i class="devicon-sass-original colored ico" title="SCSS"></i>-->
             <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/vuejs.svg" alt="VueJS" title="VueJS">
             <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/sass.svg" alt="SCSS" title="SCSS">
         </td>
@@ -40,14 +38,13 @@ A guitar tab tracking web app using a VEN stack.
 	<tr>
 		<td>Routing</td>
 		<td>
-		    <!--<i class="devicon-express-original colored ico" title="Express"></i>-->
 		    <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/express.svg" alt="Express" title="Express">
+		    + Vue Router + Axios
 		</td>
 	</tr>
 	<tr>
 		<td>Server</td>
 		<td>
-		    <!--<i class="devicon-nodejs-plain colored ico" title="NodeJS"></i>-->
 		    <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/nodejs.svg" alt="NodeJS" title="NodeJS">
 		</td>
 	</tr>
