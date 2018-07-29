@@ -15,7 +15,7 @@ app.use(cors())
 
 require('./routes')(app)
 
-sequelize.sync()
+sequelize.sync() // use {force: true} to clear the DB
   .then(() => {
     app.listen(PORT)
     console.log(`Server started on ${PORT}`)

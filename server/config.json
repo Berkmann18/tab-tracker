@@ -11,5 +11,8 @@
      "storage": "./tabtracker.sqlite",
      "operatorsAliases": false
    }
- }
+ },
+  "authentication": {
+    "jwtSecret": "secret"
+  }
 }

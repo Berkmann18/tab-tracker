@@ -5,12 +5,10 @@
                 <v-toolbar flat dense
                            class="cyan"
                            dark>
-                    <v-toolbar-title>Register</v-toolbar-title>
+                    <v-toolbar-title>Login</v-toolbar-title>
                 </v-toolbar>
                 <div class="pl-4 pr-4 pr-2 pb-2">
-                    <form
-                            name="registration"
-                            autocomplete="off">
+                    <form name="registration">
                         <v-text-field
                                 label="Email"
                                 v-model="email"
@@ -19,20 +17,19 @@
                                 label="Password"
                                 v-model="password"
                                 type="password"
-                                autocomplete="new-password"
                         ></v-text-field>
                         <br />
 
                         <div
                                 v-html="error"
-                                class="red--text"
+                                class="white--text"
                         ></div>
                         <v-btn
                                 class="cyan"
-                                @click="register"
+                                @click="login"
                                 dark
                         >
-                            Register
+                            Login
                         </v-btn>
                     </form>
                 </div>
@@ -53,9 +50,9 @@ export default {
     }
   },
   methods: {
-    async register () {
+    async login () {
       try {
-        const response = await AuthenticationService.register({
+        const response = await AuthenticationService.login({
           email: this.email,
           password: this.password
         })
@@ -68,7 +65,7 @@ export default {
           .catch(fail)
         this.$store.dispatch('setUser', response.data.user)
           .catch(fail)
-        // console.log('Res', response.data)
+        // console.log('data', response.data)
       } catch (err) {
         this.error = err.response.data.error
       }
@@ -78,4 +75,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 </style>
