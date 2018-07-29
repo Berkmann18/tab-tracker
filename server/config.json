@@ -1,4 +1,15 @@
 {
  "port": "8081",
-  "url": "http://localhost:8081"
+ "url": "http://localhost:8081",
+ "db": {
+   "database": "tabtracker",
+   "user": "tabtracker",
+   "password": "tabtracker",
+   "options": {
+     "dialect": "sqlite",
+     "host": "localhost",
+     "storage": "./tabtracker.sqlite",
+     "operatorsAliases": false
+   }
+ }
 }

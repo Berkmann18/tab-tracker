@@ -6,16 +6,17 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const PORT = process.env.PORT || require('../config').port || 8081
 
+const {sequelize} = require('./models')
 const app = express()
 
 app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.post('/register', (req, res) => {
-  res.send({
-    message: `Hello ${req.body.email}! Thank you for registering`
-  })
-})
+require('./routes')(app)
 
-app.listen(PORT)
+sequelize.sync()
+  .then(() => {
+    app.listen(PORT)
+    console.log(`Server started on ${PORT}`)
+  }).catch(err => console.log('Sequelize sync error:', err))

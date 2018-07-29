@@ -32,7 +32,8 @@ A guitar tab tracking web app using a VEN stack.
 		<td>Front-End</td>
 		<td>
             <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/vuejs.svg" alt="VueJS" title="VueJS">
-            <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/sass.svg" alt="SCSS" title="SCSS">
+            <!--<img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/sass.svg" alt="SCSS" title="SCSS">-->
+            Vuetify
         </td>
 	</tr>
 	<tr>
@@ -47,6 +48,10 @@ A guitar tab tracking web app using a VEN stack.
 		<td>
 		    <img src="https://cdn.rawgit.com/Berkmann18/Rsc/a740adc1/svg/nodejs.svg" alt="NodeJS" title="NodeJS">
 		</td>
+	</tr>
+	<tr>
+	    <td>Database</td>
+	    <td>Sequelize + SQLite</td>
 	</tr>
 </table>
 
