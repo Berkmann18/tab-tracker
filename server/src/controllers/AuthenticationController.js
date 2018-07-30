@@ -1,22 +1,22 @@
-'use strict'
+'use strict';
 
-const {User} = require('../models')
-const jwt = require('jsonwebtoken')
-const config = require('../../config')
+const {User} = require('../models');
+const jwt = require('jsonwebtoken');
+const config = require('../../config');
 
 const ONE_WEEK = 3600 * 24 * 7;
 const jwtSignUser = (user) => {
   return jwt.sign(user, config.authentication.jwtSecret, {
     expiresIn: ONE_WEEK
   })
-}
+};
 
 module.exports = {
   async register (req, res) {
     try {
-      const user = await User.create(req.body)
+      const user = await User.create(req.body);
 
-      const usr = user.toJSON()
+      const usr = user.toJSON();
       res.send({
         user: usr,
         token: jwtSignUser(usr)
@@ -29,14 +29,15 @@ module.exports = {
   },
   async login (req, res) {
     try {
-      const {email, password} = req.body
+      const {email, password} = req.body;
       const user = await User.findOne({
         email
         // password
-      })
+      });
       const validPwd = await user.comparePassword(password);
       if (!user || !validPwd) {
-        throw 'incorrect' //should now lead to the catch block
+        // noinspection ExceptionCaughtLocallyJS
+          throw 'incorrect' //should now lead to the catch block
       }
       const usr = user.toJSON();
       res.send({
@@ -49,4 +50,4 @@ module.exports = {
       })
     }
   }
-}
+};

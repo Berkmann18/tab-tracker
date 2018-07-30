@@ -8,7 +8,7 @@
 <!-- dependabot badge -->
 
 [![Build Status](https://travis-ci.org/Berkmann18/tab-tracker.png?branch=master)](https://travis-ci.org/Berkmann18/tab-tracker)
-[![BCH compliance](https://bettercodehub.com/edge/badge/Berkmann18/tab-tracker?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/Berkmann18/tab-tracker?branch=master)](https://bettercodehub.com/results/Berkmann18/tab-tracker)
 [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/Berkmann18/tab-tracker.svg?maxAge=2592000)](https://codecov.io/github/Berkmann18/tab-tracker?branch=master)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
