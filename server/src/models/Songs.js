@@ -1,0 +1,15 @@
+'use strict';
+
+
+module.exports = (sequelize, DataTypes) => {
+  return sequelize.define('Song', {
+    title: DataTypes.STRING,
+    artist: DataTypes.STRING,
+    album: DataTypes.STRING,
+    genre: DataTypes.STRING,
+    albumImageUrl: DataTypes.STRING,
+    youtubeId: DataTypes.STRING,
+    lyrics: DataTypes.TEXT,
+    tab: DataTypes.TEXT
+  })
+}
