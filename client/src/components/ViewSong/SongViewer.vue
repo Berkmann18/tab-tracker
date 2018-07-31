@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-flex>
+    <v-flex xs6 mt-5>
       <song-meta :song="song" />
       <v-btn
         dark
@@ -11,14 +11,14 @@
       </v-btn>
     </v-flex>
 
-    <v-flex xs6>
+    <v-flex xs6 mt-5>
       <base-panel title="Tabs">
         <pre>
         {{song.tab}}
         </pre>
       </base-panel>
       <base-panel title="Lyrics">
-        <pre>
+        <pre style="overflow: scroll">
         {{song.lyrics}}
         </pre>
       </base-panel>

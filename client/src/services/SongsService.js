@@ -3,8 +3,12 @@
 import Api from '@/services/Api'
 
 export default {
-  async index () {
-    return Api().get('songs')
+  async index (search) {
+    return search !== '' ? Api().get('songs', {
+      params: {
+        search
+      }
+    }) : Api().get('songs')
   },
   async post (song) {
     return Api().post('songs', song)
