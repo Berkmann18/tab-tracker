@@ -72,8 +72,8 @@
       <v-btn
         dark
         class="cyan"
-        @click="create">
-        Create song
+        @click="save">
+        Save song
       </v-btn>
     </v-flex>
   </v-layout>
@@ -106,8 +106,17 @@ export default {
       }
     }
   },
+  async mounted () {
+    try {
+      const songId = this.$store.state.route.params.songId
+      this.song = (await SongsService.show(songId)).data
+      await SongsService.show(this.song)
+    } catch (err) {
+      console.error('Song failed to be fetched')
+    }
+  },
   methods: {
-    async create () {
+    async save () {
       this.error = null
       const allFieldsFilled = Object.keys(this.song)
         .every(key => !!this.song[key])
@@ -117,14 +126,11 @@ export default {
         return
       }
 
-      // Call API
       try {
-        await SongsService.post(this.song)
-        this.$router.push({
-          name: 'songs'
-        })
+        await SongsService.put(this.song)
+        this.$router.go(-1)
       } catch (err) {
-        console.error('Song failed to be created')
+        console.error('Song failed to be saved')
       }
     }
   }

@@ -1,10 +1,48 @@
 <template>
   <panel title="Songs">
+      <v-btn
+        slot="action"
+        fab
+        light
+        absolute
+        right
+        middle
+        class="cyan accent-2"
+        to="/songs/create"
+      >
+        <v-icon>add</v-icon>
+      </v-btn>
     <div
       v-for="song in songs"
       :key="song.id"
+      class="song"
       >
-        {{song.title}} - {{song.artist}} - {{song.album}}
+        <v-layout>
+          <v-flex xs6>
+            <div class="song-title">
+              {{song.title}}
+            </div>
+            <div class="song-artist">
+              {{song.artist}}
+            </div>
+            <div class="song-genre">
+              {{song.genre}}
+            </div>
+            <v-btn
+              dark
+              class="cyan"
+              :to="`/songs/${song.id}`"
+            >
+              View
+            </v-btn>
+          </v-flex>
+          <v-flex xs6>
+            <img
+              class="album-image"
+              :src="song.albumImageUrl"
+            />
+          </v-flex>
+        </v-layout>
     </div>
   </panel>
 </template>
@@ -30,11 +68,9 @@ export default {
       .then(songs => {
         this.songs = songs.data
       })
-      .catch(err => console.error('Mouting error:', err))
+      .catch(err => console.error('Mounting error:', err))
   }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss" src="../song.scss"></style>

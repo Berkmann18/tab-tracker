@@ -8,6 +8,11 @@ export default {
   },
   async post (song) {
     return Api().post('songs', song)
+  },
+  async show (id) {
+    return Api().get(`/songs/${id}`)
+  },
+  async put (song) {
+    return Api().put(`/songs/${song.id}`, song)
   }
-
 }

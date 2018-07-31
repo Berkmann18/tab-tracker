@@ -1,0 +1,23 @@
+.song {
+  padding: 1.428rem; /* 20px */
+  height: 23.57rem; /* 330px */
+  overflow: hidden;
+}
+.song-title {
+  font-size: 2.14rem /* 30px */
+}
+
+.song-artist {
+  font-size: 1.71rem /* 24px */
+}
+
+.song-genre {
+  font-size: 1.25rem /* 18px */
+}
+
+$sz: 70%;
+.album-image {
+  /*height: $sz;*/
+  width: $sz;
+  margin: 0 auto;
+}
